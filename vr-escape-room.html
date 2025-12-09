@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>VR Escape Room – Donald Tan</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="site-wrapper">
+      <div class="top-bar">Personal Portfolio Website Design</div>
+
+      <header>
+        <div class="container nav">
+          <div class="nav__brand">
+            <div class="nav__brand-mark">DT</div>
+            <span>Donald Tan</span>
+          </div>
+          <nav class="nav__links">
+            <a href="index.html" class="nav__link">Home</a>
+            <a href="portfolio.html" class="nav__link nav__link--active">Portfolio</a>
+            <a href="about.html" class="nav__link">About</a>
+            <a href="contact.html" class="nav__link">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="section">
+        <div class="container project-detail">
+          <h1>VR Escape Room</h1>
+          <p class="project-detail__subtitle">
+            Immersive puzzle-solving experience in VR.
+          </p>
+
+          <div class="project-meta">
+            <span class="tag">Unity</span>
+            <span class="tag">C#</span>
+            <span class="tag">VR</span>
+            <span class="tag">Oculus</span>
+            <span class="tag">School Project</span>
+          </div>
+
+          <section>
+            <h2>Conceptualisation</h2>
+            <p>
+              The goal of this project was to design an immersive escape room
+              experience in virtual reality. Players are placed inside a locked
+              lab and must interact with objects, discover hidden clues and
+              solve a sequence of puzzles to unlock the final door. The focus
+              was on creating intuitive interactions, clear visual feedback and
+              a tense but fun atmosphere.
+            </p>
+          </section>
+
+          <section>
+            <h2>Planning</h2>
+            <ul>
+              <li>Sketched the room layout and puzzle flow on paper.</li>
+              <li>
+                Defined a three-stage puzzle sequence: finding codes, combining
+                clues and activating the final mechanism.
+              </li>
+              <li>
+                Created a simple user flow: <strong>Explore → Discover clues → Solve puzzles → Escape</strong>.
+              </li>
+              <li>
+                Prepared an asset list (table, shelves, microscope, notes,
+                locked box, door, etc.) and decided which assets could be
+                grabbed or interacted with.
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Development</h2>
+            <ul>
+              <li>
+                Built the room in <strong>Unity</strong> using basic 3D shapes
+                and free assets to keep performance high.
+              </li>
+              <li>
+                Implemented object interaction using <strong>C#</strong>
+                scripts (grab, rotate, place objects in correct spots).
+              </li>
+              <li>
+                Set up trigger zones that detect when the player solves each
+                puzzle and unlock the next step.
+              </li>
+              <li>
+                Added sound effects and simple lighting changes to give
+                feedback when a puzzle is completed.
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Reflection & Learning</h2>
+            <p>
+              Through this project I learned how to design interactions for VR,
+              including comfortable locomotion, object grabbing and using
+              trigger events. I also gained experience breaking down a puzzle
+              into smaller steps and testing the flow so players do not get
+              stuck too early. If I had more time, I would add a short tutorial,
+              more environmental storytelling and better visual effects when
+              the player escapes.
+            </p>
+          </section>
+
+          <!-- Screenshot placeholders -->
+        <section>
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <img src="images/Room1_ColorPuzzle.png" alt="Room 1 – Color Puzzle" />
+                <img src="images/Room2_MicroscopePuzzle.png" alt="Room 2 – Microscope Puzzle" />
+                <img src="images/Room3_KeypadPuzzle.png" alt="Room 3 – Keypad Puzzle" />
+                <img src="images/Room4_ObjectArrangement.png" alt="Room 4 – Object Arrangement" />
+                <img src="images/DoorOpen.png" alt="Door Opening – Final Escape" />
+            </div>
+        </section>
+
+          <p>
+            <a href="portfolio.html" class="btn btn-secondary">
+              ← Back to Portfolio
+            </a>
+          </p>
+        </div>
+      </main>
+
+      <footer>
+        <div class="footer-inner">
+          <span>© 2025 Donald Tan. All rights reserved.</span>
+          <span>Digital Design &amp; Development</span>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
