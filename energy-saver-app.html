@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Energy Saver Monitor - Donald Tan</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="site-wrapper">
+
+    <!-- NAVIGATION -->
+    <header>
+      <div class="container nav">
+        <div class="nav__brand">
+          <div class="nav__brand-mark">DT</div>
+          <span>Donald Tan</span>
+        </div>
+
+        <nav class="nav__links">
+          <a href="index.html" class="nav__link">Home</a>
+          <a href="portfolio.html" class="nav__link nav__link--active">Portfolio</a>
+          <a href="about.html" class="nav__link">About</a>
+          <a href="contact.html" class="nav__link">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="section">
+      <div class="container project-detail">
+
+        <h1>Energy Saver Monitor</h1>
+        <p class="project-detail__subtitle">
+          Client-server mobile application for energy usage monitoring.
+        </p>
+
+        <h2>Overview</h2>
+        <p>
+          It is a client-server mobile application that allows users to monitor household
+          appliance energy usage and estimate electricity costs.
+        </p>
+
+        <h2>Conceptualisation</h2>
+        <p>
+          The idea was to support sustainable living by helping users better understand
+          how much energy their household appliances consume. The application connects
+          a mobile frontend to a backend web service for persistent data storage.
+        </p>
+
+        <h2>Planning</h2>
+        <ul>
+          <li>Designed a client-server architecture</li>
+          <li>Planned RESTful API endpoints for CRUD operations</li>
+          <li>Defined an appliance data model (name, power, hours, cost)</li>
+          <li>Designed a simple and intuitive mobile UI</li>
+        </ul>
+
+        <h2>Development & Implementation</h2>
+        <p>
+          The mobile application was built using React Native with Expo, while the backend
+          web service was implemented using Node.js and Express. Appliance data is stored
+          in a SQLite database and accessed via RESTful API calls.
+        </p>
+
+        <h2>Key Features</h2>
+        <ul>
+          <li>Add, edit and delete appliances</li>
+          <li>Automatic energy and cost calculation</li>
+          <li>Data retrieved from backend web service</li>
+          <li>Persistent storage using SQLite</li>
+          <li>Clean and user-friendly mobile interface</li>
+        </ul>
+
+        <h2>Challenges & Solutions</h2>
+        <p>
+          One challenge was ensuring accurate energy and cost calculations while keeping
+          the UI responsive. This was addressed by performing calculations on the backend
+          and returning computed values via the API.
+        </p>
+
+        <h2>Reflection</h2>
+        <p>
+          This project strengthened my understanding of client-server architecture,
+          RESTful API integration and collaborative development. It also improved my
+          ability to integrate frontend and backend components effectively.
+        </p>
+
+        <h2>Tools & Technologies</h2>
+        <div class="chip-row">
+          <span class="chip">React Native</span>
+          <span class="chip">Expo</span>
+          <span class="chip">Node.js</span>
+          <span class="chip">Express</span>
+          <span class="chip">SQLite</span>
+          <span class="chip">REST API</span>
+        </div>
+
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+
+          <figure class="gallery-item">
+            <img src="images/energy-home.png" alt="Energy Saver Home Screen" />
+            <figcaption>
+              Home screen displaying appliance list with energy usage and cost.
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="images/energy-add.png" alt="Add Appliance Screen" />
+            <figcaption>
+              Add Appliance screen for entering power, usage hours and quantity.
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="images/energy-edit.png" alt="Edit Appliance Screen" />
+            <figcaption>
+              Edit Appliance screen allowing users to update or delete appliances.
+            </figcaption>
+          </figure>
+
+        </div>
+
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-inner">
+        <span>© 2025 Donald Tan. All rights reserved.</span>
+        <span>Digital Design & Development</span>
+      </div>
+    </footer>
+
+  </div>
+</body>
+</html>
+

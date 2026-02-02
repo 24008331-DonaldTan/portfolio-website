@@ -50,15 +50,6 @@ main {
   padding: 0 24px;
 }
 
-/* ===== TOP BAR (BLUE STRIP WITH TITLE) ===== */
-.top-bar {
-  background: #e3ebff;
-  color: var(--color-navy-dark);
-  font-size: 14px;
-  padding: 8px 24px;
-  border-bottom: 1px solid rgba(2, 37, 75, 0.16);
-}
-
 /* ===== HEADER / NAV ===== */
 header {
   background: var(--color-navy);

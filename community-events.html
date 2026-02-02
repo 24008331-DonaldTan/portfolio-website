@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Community Events Web Application – Donald Tan</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="site-wrapper">
+
+      <!-- HEADER -->
+      <header>
+        <div class="container nav">
+          <div class="nav__brand">
+            <div class="nav__brand-mark">DT</div>
+            <span>Donald Tan</span>
+          </div>
+
+          <nav class="nav__links">
+            <a href="index.html" class="nav__link">Home</a>
+            <a href="portfolio.html" class="nav__link nav__link--active">Portfolio</a>
+            <a href="about.html" class="nav__link">About</a>
+            <a href="contact.html" class="nav__link">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      <!-- MAIN -->
+      <main class="section">
+        <div class="container project-detail">
+
+          <h1>Community Events Web Application</h1>
+          <p class="project-detail__subtitle">
+            Client–server web application for managing and browsing community events.
+          </p>
+
+          <!-- OVERVIEW -->
+          <section>
+            <h2>Overview</h2>
+            <p>
+              This project is a community events web application developed as part of a
+              school assignment. The application allows users to create, view, edit and
+              delete community events through a simple and intuitive interface.
+            </p>
+            <p>
+              The project follows a <strong>client–server architecture</strong>, where the
+              frontend handles user interaction and the backend manages data storage and
+              retrieval.
+            </p>
+          </section>
+
+          <!-- SYSTEM ARCHITECTURE -->
+          <section>
+            <h2>System Architecture</h2>
+            <ul>
+              <li><strong>Frontend:</strong> Built with React for UI rendering and user interaction.</li>
+              <li><strong>Backend:</strong> Node.js and Express providing RESTful APIs.</li>
+              <li><strong>Database:</strong> SQLite used to store event data persistently.</li>
+              <li><strong>Communication:</strong> Frontend communicates with backend using HTTP requests.</li>
+            </ul>
+          </section>
+
+          <!-- FEATURES -->
+          <section>
+            <h2>Key Features</h2>
+            <ul>
+              <li>Create new community events using a form-based interface</li>
+              <li>View a list of existing events retrieved from the database</li>
+              <li>Edit event details through backend API calls</li>
+              <li>Delete events with immediate UI updates</li>
+              <li>Persistent data storage using SQLite</li>
+            </ul>
+          </section>
+
+          <!-- DEVELOPMENT -->
+          <section>
+            <h2>Development & Implementation</h2>
+            <p>
+              The frontend application is built using React and communicates with a Node.js
+              backend via RESTful API endpoints. Each CRUD operation (Create, Read, Update,
+              Delete) is handled by the backend, ensuring separation of concerns and clean
+              system design.
+            </p>
+            <p>
+              During development, the backend was run locally and tested using browser and
+              frontend API requests to ensure correct data flow between the client and
+              server.
+            </p>
+          </section>
+
+          <!-- REFLECTION -->
+          <section>
+            <h2>Reflection & Learning</h2>
+            <p>
+              This project strengthened my understanding of full-stack web development,
+              particularly how frontend and backend systems communicate. I learned how to
+              design RESTful APIs, manage persistent data, and structure a project using a
+              client–server architecture.
+            </p>
+            <p>
+              In the future, the application could be enhanced with user authentication,
+              improved validation and deployment to a cloud hosting platform.
+            </p>
+          </section>
+          
+          <h2>Tools & Technologies</h2>
+          <div class="chip-row">
+            <span class="chip">React</span>
+            <span class="chip">Node.js</span>
+            <span class="chip">Express</span>
+            <span class="chip">SQLite</span>
+          </div>
+
+          <!-- GALLERY -->
+        <section>
+          <h2>Gallery</h2>
+
+          <div class="gallery-grid">
+
+            <figure class="gallery-item">
+              <img src="images/community-login.png" alt="Community Events login page" />
+              <figcaption>
+                Login screen allowing authorised users to access event management features.
+              </figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+              <img src="images/community-event-details.png" alt="Event details page" />
+              <figcaption>
+                Event details page displaying date, time, location and description, with Edit and Delete actions.
+              </figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+              <img src="images/community-edit-event.png" alt="Edit event form" />
+              <figcaption>
+                Edit Event form enabling users to update event information through the backend API.
+              </figcaption>
+            </figure>
+
+          </div>
+        </section>
+
+
+          <p>
+            <a href="portfolio.html" class="btn btn-secondary">
+              ← Back to Portfolio
+            </a>
+          </p>
+
+        </div>
+      </main>
+
+      <!-- FOOTER -->
+      <footer>
+        <div class="footer-inner">
+          <span>© 2025 Donald Tan. All rights reserved.</span>
+          <span>Digital Design &amp; Development</span>
+        </div>
+      </footer>
+
+    </div>
+  </body>
+</html>

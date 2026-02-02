@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mobile Banking Application – Donald Tan</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="site-wrapper">
+
+    <!-- NAVIGATION -->
+    <header>
+      <div class="container nav">
+        <div class="nav__brand">
+          <div class="nav__brand-mark">DT</div>
+          <span>Donald Tan</span>
+        </div>
+
+        <nav class="nav__links">
+          <a href="index.html" class="nav__link">Home</a>
+          <a href="portfolio.html" class="nav__link nav__link--active">Portfolio</a>
+          <a href="about.html" class="nav__link">About</a>
+          <a href="contact.html" class="nav__link">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="section">
+      <div class="container project-detail">
+
+        <h1>Mobile Banking Application</h1>
+        <p class="project-detail__subtitle">
+          Mobile UI for personal finance management
+        </p>
+
+        <h2>Overview</h2>
+        <p>
+          This project is a simple mobile banking-style application built as a
+          school project using React Native and Expo. It allows users to track
+          daily income and expenses and instantly see a summary of their
+          financial situation.
+        </p>
+
+        <h2>Conceptualisation</h2>
+        <p>
+          The idea was to design a clean, blue-themed interface similar to a real
+          banking app while focusing on core functionality. The app uses three
+          main screens: Home (transaction list), Add Transaction and Summary.
+        </p>
+
+        <h2>Planning</h2>
+        <ul>
+          <li>Defined three main screens: Home, Add Transaction, Summary</li>
+          <li>Planned a simple data model: title, amount, type</li>
+          <li>Designed a consistent blue, card-based UI</li>
+          <li>Used in-memory state for instant UI updates</li>
+        </ul>
+
+        <h2>Development & Implementation</h2>
+        <p>
+          Built using React Native with Expo and JavaScript. Navigation is
+          handled using a stack navigator. Transaction data is stored in state
+          and shared across screens through navigation parameters.
+        </p>
+
+        <h2>Key Features</h2>
+        <ul>
+          <li>Add, Edit and Delete transactions</li>
+          <li>Summary screen with income, expense and balance</li>
+          <li>Clear surplus or deficit feedback</li>
+          <li>Friendly empty-state guidance</li>
+          <li>Consistent blue banking theme</li>
+        </ul>
+
+        <h2>Challenges & Solutions</h2>
+        <p>
+          Calculating totals accurately was the main challenge. This was solved
+          using <strong>useMemo</strong> to derive totals from the transaction
+          list efficiently and reliably.
+        </p>
+
+        <h2>Reflection</h2>
+        <p>
+          This project strengthened my understanding of shared state management,
+          mobile UI design and presenting calculated data clearly. Future
+          improvements could include persistence and data visualisation.
+        </p>
+
+        <h2>Tools & Technologies</h2>
+        <div class="chip-row">
+          <span class="chip">React Native</span>
+          <span class="chip">Expo</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">Mobile UI</span>
+        </div>
+
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+
+          <figure class="gallery-item">
+            <img src="images/home-screen.png" alt="Home screen with transaction list" />
+            <figcaption>
+              Home screen displaying income and expense transactions with Edit and Delete actions.
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="images/edit-item-screen.png" alt="Edit transaction screen" />
+            <figcaption>
+              Edit Transaction screen allowing users to update title, amount and transaction type.
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="images/summary-screen.png" alt="Summary screen with totals" />
+            <figcaption>
+              Summary screen calculating total income, total expense and final balance.
+            </figcaption>
+          </figure>
+
+        </div>
+
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-inner">
+        <span>© 2025 Donald Tan. All rights reserved.</span>
+        <span>Digital Design & Development</span>
+      </div>
+    </footer>
+
+  </div>
+</body>
+</html>
